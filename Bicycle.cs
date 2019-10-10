@@ -11,14 +11,20 @@ public class Bicycle{
     public void Decelerate(){
         currentSpeed-=10;
     }
-    public void ChangeGear(){
-        currentGear=0;
+    public void ChangeGearUp(){
+        currentGear+=1;
+    }
+    public void ChangeGearDown(){
+        currentGear-=1;
     }
     public void PushBell(){
-        pushedBell=false;
+        pushedBell=true;
     }
-    public void SetSteeringAngle(){
-        steeringAngle=25.5;
+    public void TurnLeft(){
+        steeringAngle+=5;
+    }
+    public void TurnRight(){
+        steeringAngle-=5;
     }
 
     public void GetStates(){
